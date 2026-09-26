@@ -1,0 +1,16 @@
+# Compiled binary
+portswarden.exe
+*.exe
+
+# Go workspace files
+*.syso
+/go/
+
+# Windows junk
+Thumbs.db
+desktop.ini
+*.tmp
+
+# Editors
+.vscode/
+.idea/
