@@ -36,11 +36,15 @@ func List() ([]PortInfo, error) {
 		}
 		seen[key] = true
 
-		name, path := "", ""
+		name, path := "<protected>", ""
 		if c.Pid != 0 {
 			if p, err := process.NewProcess(c.Pid); err == nil {
-				name, _ = p.Name()
-				path, _ = p.Exe()
+				if n, err := p.Name(); err == nil {
+					name = n
+				}
+				if e, err := p.Exe(); err == nil {
+					path = e
+				}
 			}
 		}
 
