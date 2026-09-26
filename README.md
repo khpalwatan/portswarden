@@ -1,3 +1,5 @@
+<img width="120" height="120" alt="portswarden icon" src="docs/icon.png" />
+
 # portswarden 🛡️
 
 > Find and free Windows ports — kill `EADDRINUSE` in one command.
@@ -30,6 +32,8 @@ If you're also a vibe coder — this repo is proof you can ship a real tool in a
 ---
 
 ## ⚡ What it does
+
+![portswarden list output](docs/screenshot-list.png)
 
 | Command | What it does |
 |---|---|
@@ -113,7 +117,7 @@ That's the whole thing. No services, no background daemons, no config files.
 | [`shirou/gopsutil/v3`](https://github.com/shirou/gopsutil) | Cross-platform port + process info |
 | [`olekukonko/tablewriter`](https://github.com/olekukonko/tablewriter) | Pretty table output |
 | [`fatih/color`](https://github.com/fatih/color) | Colored terminal output |
-| [`tc-hib/go-winres`](https://github.com/tc-hib/go-winres) | *(coming soon)* embed icon + version info into the `.exe` |
+| [`akavel/rsrc`](https://github.com/akavel/rsrc) | Embeds the app icon into the `.exe` |
 
 Language: **Go** — because it compiles to a single `.exe` with zero runtime dependencies. Users just download and run.
 
@@ -125,8 +129,8 @@ Language: **Go** — because it compiles to a single `.exe` with zero runtime de
 - [x] `kill` command
 - [x] `watch` command
 - [x] `excluded` command
-- [ ] Icon + version info in the `.exe`
-- [ ] GitHub Actions — auto-build `.exe` on every release
+- [x] Icon embedded in the `.exe`
+- [x] GitHub Actions — auto-build `.exe` on every release
 - [ ] Interactive TUI mode (arrow keys to select and kill)
 - [ ] Docker-aware process names
 - [ ] `winget` / `scoop` manifests
