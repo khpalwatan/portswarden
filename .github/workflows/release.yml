@@ -1,0 +1,41 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+          cache: true
+
+      - name: Install Go dependencies
+        run: go mod download
+
+      - name: Install rsrc (icon embedder)
+        run: go install github.com/akavel/rsrc@latest
+
+      - name: Generate icon resource
+        run: rsrc -ico winres/icon.ico -o rsrc.syso
+
+      - name: Build binary
+        run: go build -ldflags="-s -w" -o portswarden.exe .
+
+      - name: Upload to release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: portswarden.exe
+          generate_release_notes: true
