@@ -1,8 +1,15 @@
-<img width="120" height="120" alt="portswarden icon" src="docs/icon.png" />
+<div align="center">
+  <img width="128" height="128" alt="portswarden icon" src="docs/icon.png" />
 
-# portswarden 🛡️
+  # 🛡️ portswarden
 
-> Find and free Windows ports — kill `EADDRINUSE` in one command.
+  **Find and free Windows ports — kill `EADDRINUSE` in one command.**
+
+  [![Download](https://img.shields.io/badge/download-latest-22c55e?style=for-the-badge&logo=windows&logoColor=white)](../../releases/latest)
+  [![MIT License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
+  [![Go](https://img.shields.io/badge/Go-1.22+-00ADD8?style=for-the-badge&logo=go&logoColor=white)](https://go.dev)
+  [![Platform](https://img.shields.io/badge/platform-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](../../releases/latest)
+</div>
 
 A small, honest CLI tool built for Windows developers who are tired of:
 
@@ -23,11 +30,11 @@ That's it.
 
 ## 👋 About the creator
 
-Hi, I'm **Waseem Khan**, 23 years old. I love **vibe coding** — building real things, learning by doing, and shipping rather than waiting for the perfect plan.
-
-This project is **vibe-coded**: it was created with help from **DeepSeek AI**, built in one evening on a Windows machine, with a notepad, a terminal, and a whole lot of "let's just try it."
-
-If you're also a vibe coder — this repo is proof you can ship a real tool in a day.
+> Hi, I'm **Waseem Khan**, 23 years old. I love **vibe coding** — building real things, learning by doing, and shipping rather than waiting for the perfect plan.
+>
+> This project is **vibe-coded**: it was created with help from **DeepSeek AI**, built in one evening on a Windows machine, with a notepad, a terminal, and a whole lot of "let's just try it."
+>
+> If you're also a vibe coder — this repo is proof you can ship a real tool in a day.
 
 ---
 
@@ -64,7 +71,7 @@ The `excluded` command is the real differentiator. Windows quietly reserves rand
 
 ### Option 1 — Download the `.exe`
 
-Grab the latest `portswarden.exe` from the [Releases page](../../releases) and put it anywhere on your `PATH`.
+Grab the latest `portswarden.exe` from the [Releases page](../../releases/latest) and put it anywhere on your `PATH`.
 
 ### Option 2 — Build from source
 
@@ -150,4 +157,6 @@ MIT — do whatever you want. See [LICENSE](LICENSE).
 
 ---
 
-Built with 🖤 by [@khpalwatan](https://github.com/khpalwatan) — vibe coded, one evening, one terminal.
+<div align="center">
+Built with 🖤 by <a href="https://github.com/khpalwatan">@khpalwatan</a> — vibe coded, one evening, one terminal.
+</div>
